@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=720 height=1280 tabindex="-1" style="width: 720px; height: 1280px; background: #231F20"></canvas>
-    <script src="Build/MoonRabbit_Build.loader.js"></script>
+    <script src="Build/MoonRabbit.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -26,9 +26,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/MoonRabbit_Build.data",
-        frameworkUrl: "Build/MoonRabbit_Build.framework.js",
-        codeUrl: "Build/MoonRabbit_Build.wasm",
+        dataUrl: "Build/MoonRabbit.data",
+        frameworkUrl: "Build/MoonRabbit.framework.js",
+        codeUrl: "Build/MoonRabbit.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "MoonRabbit",
